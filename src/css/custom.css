@@ -1,0 +1,172 @@
+.h-full {
+    min-height: 100vh !important;
+}
+
+.shadowed {
+    -webkit-filter: drop-shadow(6px 6px 9px rgba(0, 0, 0, 0.3)) !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=6, OffY=6, Color='#444')" !important;
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=6, OffY=6, Color='#444')" !important;
+}
+
+.shadow {
+    box-shadow: 0 0 6px rgba(27, 22, 66, .03), 0 14px 24px rgba(27, 22, 66, .06) !important;
+}
+
+/************************* Background **********************/
+
+.bg-image-cover {
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-image-cover-right {
+    background-position: right;
+    background-size: cover;
+}
+
+.bg-image-cover-left {
+    background-position: left;
+    background-size: cover;
+}
+
+.bg-image-contain-center {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bg-image-contain-right {
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bg-image-contain-left {
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bg-overlay-before {
+    z-index: -1;
+    position: relative;
+}
+
+.bg-before {
+    position: relative;
+}
+
+.bg-before::before {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.bg-overlay-before::before {
+    position: absolute;
+    opacity: 0.9;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.bg-gd-primary-before::before {
+    content: "";
+    background: #ffc107; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffc107, #ffd128); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffc107, #ffd128); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-gd-purple-before::before {
+    content: "";
+    background: #5800b0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ad00c5, #5800b0); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ad00c5, #5800b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-gd-danger-before::before {
+    content: "";
+    background: #d74026; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d74026, #d7345c); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d74026, #d7345c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-gd-warning-before::before {
+    content: "";
+    background: #c8612c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #c8612c, #cda127); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c8612c, #cda127); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-gd-success-before::before {
+    content: "";
+    background: #0c6d65; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2baf5a, #0c6d65); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2baf5a, #0c6d65); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-gd-info-before::before {
+    content: "";
+    background: #5aba9a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5aba9a, #73ae54); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5aba9a, #73ae54); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-gd-dark-before::before {
+    content: "";
+    background: #181818; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1d1d1d, #303030); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1d1d1d, #303030); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-gd-animation {
+    background: linear-gradient(315deg, #007dff, #8732f5, #ff462e, #ed9900);
+    background-size: 800% 800%;
+
+    -webkit-animation: bg-gr-animet 16s ease infinite;
+    -moz-animation: bg-gr-animet 16s ease infinite;
+    animation: bg-gr-animet 16s ease infinite;
+}
+
+@-webkit-keyframes bg-gr-animet {
+    0% {
+        background-position: 0% 19%
+    }
+    50% {
+        background-position: 100% 82%
+    }
+    100% {
+        background-position: 0% 19%
+    }
+}
+
+@-moz-keyframes bg-gr-animet {
+    0% {
+        background-position: 0% 19%
+    }
+    50% {
+        background-position: 100% 82%
+    }
+    100% {
+        background-position: 0% 19%
+    }
+}
+
+@keyframes bg-gr-animet {
+    0% {
+        background-position: 0% 19%
+    }
+    50% {
+        background-position: 100% 82%
+    }
+    100% {
+        background-position: 0% 19%
+    }
+}
+
+/************************* Background **********************/
